@@ -1,0 +1,123 @@
+
+.slide-left {
+    animation: slideInLeft 0.8s ease forwards;
+  }
+  
+  .slide-right {
+    animation: slideInRight 0.8s ease forwards;
+  }
+  
+  .zoom-in {
+    animation: zoomIn 0.8s ease forwards;
+  }
+  
+  .appear {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  
+  /* Aplica delays progresivos a elementos */
+  .delay-1 {
+    animation-delay: 0.3s;
+  }
+  
+  .delay-4 {
+    animation-delay: 1.2s;
+  }
+  
+  #lang-toggle {
+    background-color: #bbf7d0;
+    padding: 0.4rem 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    color: #1f2937;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid #22c55e;
+    transition: all 0.3s ease;
+  }
+  
+  #lang-toggle:hover {
+    background-color: #86efac;
+    transform: scale(1.05);
+  }
+  
+  /* Media Queries para responsividad */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nav-left, .nav-right {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding-left: 1rem;
+  }
+  
+  .nav-left li a,
+    .nav-right li a {
+    font-size: 0.9rem;
+  }
+  
+  
+  .get-started {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+  
+  section {
+    padding: 1rem;
+  }
+  
+  .hero-content, .features, .pricing, .team {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-content img, .feature-icon, .avatar {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  
+  }
+  
+  /* Estilo para el botón hamburguesa */
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  
+/* Mostrarlo en móvil */
+@media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+  }
+  
+  .nav-left, .nav-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .navbar.open .nav-left,
+    .navbar.open .nav-right {
+    display: flex;
+  }
+  
+  }
